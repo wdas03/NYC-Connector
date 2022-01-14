@@ -1,0 +1,298 @@
+html, body {
+     font-family: 'Roboto', sans-serif;
+     max-width: 100%;
+     overflow-x: hidden;
+}
+.jumbotron {
+     margin-bottom: 0;
+}
+ #footer_jumbotron {
+     background-color: #d3dded;
+}
+ #info_jumbotron {
+     background: url("../nyc_background7.jpg") no-repeat center bottom;
+     height: 100%;
+     background-size: cover;
+     overflow: hidden;
+     position:relative;
+     top:0;
+     left:0;
+     border-bottom: 3px solid #32648c;
+}
+ #info_jumbotron:before{
+     content: '';
+     position: absolute;
+     top: 0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+     background-color: #32648c;
+     opacity: 0.6;
+}
+#info_text {
+    color: white;
+    position: relative;
+}
+#info_text a {
+    color: white;
+}
+#info_text a:hover, #mission_jumbotron a:hover {
+    text-decoration: underline;
+}
+.lead {
+     line-height: 1.4em;
+     letter-spacing: .1em;
+     font-size: 1.4em;
+}
+#info_text h1 {
+    font-size: 5em;
+}
+#mission_jumbotron {
+     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+     height: 100%;
+     color: white;
+}
+#main_nav {
+     background-color: white;
+     border-bottom: 2px solid #32648c;
+}
+#main_nav img {
+    height: 50px;
+    width: 215px;
+}
+.link:hover, .link:visited {
+     text-decoration: none;
+}
+.link {
+     color: lightslategrey;
+     margin-right: 50px;
+}
+#find_resources {
+    background-color: white;
+}
+#find_resources h1 {
+    font-weight: 200;
+}
+#search {
+    width: 100px;
+    background-color: #32648c;
+    color: white;
+}
+#search:hover {
+    background-color: #1e3d56;
+}
+ #map {
+     width: 71%;
+     height: 88vh;
+     margin-left: 28%;
+     border: 3px solid #32648c;
+     border-top-right-radius: 5px;
+     border-bottom-right-radius: 5px;
+}
+#panel {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 3px solid #32648c;
+    border-left: 3px solid #32648c;
+    border-bottom: 3px solid #32648c;
+    position:absolute;
+    width:27%;
+    height: 88vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-left: 1%;
+    font-size: .8em;
+    background-color: white;
+}
+ #zip {
+     width: 70%;
+     margin: auto;
+}
+#find_resources hr {
+    height: 2px;
+}
+ #images .rounded-circle {
+     height: 110px;
+     width: 110px;
+     border: 2px solid #0f283d;
+}
+#images figcaption {
+    font-size: .9em;
+}
+ .row {
+     text-align: center;
+     padding-right: 2%;
+     padding-left: 2%;
+}
+ .row .icon-group {
+     margin: auto;
+     margin-bottom: 10px;
+}
+.firstHeading {
+     font-weight: bold;
+}
+ul, ol {
+    list-style:none;
+}
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+.black-color, .black-color a {
+    color: black;
+}
+.white-color, .white-color a {
+    color: white;
+}
+.orange-color, .orange-color a {
+    color: orange;
+}
+.yellow-color, .yellow-color a {
+    color: #bab72e;
+}
+.green-color, .green-color a {
+    color: green;
+}
+.blue-color, .blue-color a {
+    color: #1d3c8c;
+}
+.red-color, .red-color a {
+    color: #6dad68;
+}
+.hospital-color, .hospital-color a {
+    color: red;
+}
+.pink-color, .pink-color a {
+    color: #f442bc;
+}
+.purple-color, .purple-color a {
+    color: purple;
+}
+.lightblue-color, .lightblue-color a {
+    color: lightblue;
+}
+.place_info {
+     padding-top: 5%;
+     padding-right: 5%;
+     padding-left: 5%;
+     height: 100%;
+     width: 100%;
+}
+.place_info a:hover {
+     text-decoration: underline;
+}
+#bodyContent ul {
+    padding-left: 0;
+}
+#bodyContent ul li {
+     font-size: 1.4em;
+     font-weight: 400;
+}
+#bodyContent ul li img {
+    width: 32px;
+    height: 32px;
+}
+.firstHeading {
+    font-size: 1.5em;
+}
+
+@media (min-width: 2400px) {
+    #info_jumbotron, #mission_jumbotron {
+        font-size: 1.3em;
+    }
+    #images .rounded-circle {
+        height: 175px;
+        width: 175px;
+    }
+    
+    #images figcaption {
+        font-size: 1.4em;
+    }
+    
+    #search {
+        height: 75px;
+        width: 150px;
+        font-size: 1.4em;
+    }
+    
+    #address {
+        height: 75px;
+        font-size: 1.4em;
+    }
+    
+    #bodyContent ul li, .firstHeading {
+        font-size : 2.2em;
+    }
+}
+
+@media (min-device-width : 200px) and (max-device-width : 800px) {
+    html, body {
+        font-size: 12px;
+    }
+    #info_jumbotron, #mission_jumbotron {
+        font-size: 7px;
+    }
+    #main_nav img {
+        height: 40px;
+        width: 110px;
+    }
+    .display-4 {
+        font-size: 14px;
+    }
+    #find_resources {
+        font-size: 9px;
+    }
+    #find_resources input[type='checkbox'] {
+        height: 10px;
+        width: 10px;
+    }
+    #images .rounded-circle {
+        height: 20px;
+        width: 20px;
+    }
+    #images img, #bodyContent img {
+        width: 15px;
+        height: 15px;
+    }
+    #panel, #panel h5, #panel h4 {
+        font-size: 10px;
+    }
+    #bodyContent ul li {
+        font-size: 8px;
+    }
+    #address { 
+        font-size: 10px;
+        height:20px;
+    }
+    #search {
+        width: 60px;
+        height: 20px;
+        font-size: 10px;
+    }
+    #map {
+     width: 60%;
+     height: 40vh;
+     margin-left: 39%;
+     border: 3px solid skyblue;
+     border-top-right-radius: 5px;
+     border-bottom-right-radius: 5px;
+    }
+    #panel {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top: 3px solid skyblue;
+        border-left: 3px solid skyblue;
+        border-bottom: 3px solid skyblue;
+        position:absolute;
+        width:39%;
+        height: 40vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        margin-left: 1%;
+        font-size: 5px;
+        background-color: white;
+    }
+    #bodyContent ul li img {
+        height: 20px;
+        width: 20px;
+    }
+}
